@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header title="KaiOS Vue Components" />
+
+    <div>Hello World</div>
+
+    <Softkey :softkeys.sync="softkeys" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header'
+import Softkey from './components/Softkey'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Softkey
+  },
+  data () {
+    return {
+      softkeys: {
+        left: '',
+        center: 'Generate',
+        right: ''
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body, #root {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #E1E2E1 !important;
+  }
 </style>

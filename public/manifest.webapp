@@ -1,0 +1,50 @@
+{
+  "version": "1.0.1",
+  "name": "KaiVueComp",
+  "_type": "privileged",
+  "description": "KaiOS Vue Components",
+  "display": "standalone",
+  "background_color": "#0029FF",
+  "cursor": false,
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/assets/icons/xumm_192r.png",
+    "112": "/assets/icons/xumm_192r.png",
+    "128": "/assets/icons/xumm_192r.png",
+    "192": "/assets/icons/xumm_192r.png"
+  },
+  "permissions": {
+    "systemXHR": {},
+    "video-capture": {},
+    "push": {},
+    "desktop-notification": {}
+  },
+  "developer": {
+    "name": "XRPL Labs",
+    "url": "https://www.xrpl-labs.com"
+  },
+  "locales": {
+    "en-US": {
+      "name": "KaiVueComp",
+      "subtitle": "KaiOS Vue Components",
+      "description": "KaiOS Vue Components"
+    }
+  },
+  "x_sample_shortcuts": [
+    {
+      "name": "How's weather today?",
+      "short_name": "Today",
+      "description": "View weather information for today",
+      "url": "/today?source=pwa",
+      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "How's weather tomorrow?",
+      "short_name": "Tomorrow",
+      "description": "View weather information for tomorrow",
+      "url": "/tomorrow?source=pwa",
+      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+    }
+  ],
+  "default_locale": "en-US"
+}
